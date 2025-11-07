@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+</head>
+
+<body>
+    <h1>Patient Registration Form</h1>
+
+    <form action="">
+        <h2>Personal Information</h2>
+
+        <label for="patient-name">Patient Name:</label><br>
+        <input type="text" id="patient-name" name="patient-name" required><br><br>
+
+        <label for="patient-id">Patient ID:</label><br>
+        <input type="text" id="patient-id" name="patient-id" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="40"></textarea><br><br>
+
+        <label for="blood-group">Blood Group:</label><br>
+        <select id="blood-group" name="blood-group">
+            <option value="">Select Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+        
+        <br><br>
+
+        <hr>
+
+        <h2>Medical Information</h2>
+
+        <label for="chief-complaint">Complaint:</label><br>
+        <textarea id="chief-complaint" name="chief-complaint" rows="3" cols="40"></textarea>
+        
+        <br><br>
+
+        <label for="diagnosis">Diagnosis:</label><br>
+        <input type="text" id="diagnosis" name="diagnosis">
+        
+        <br><br>
+
+        <label for="temperature">Temperature (°F):</label><br>
+        <input type="number" id="temperature" name="temperature" step="0.1" min="95" max="110"><br><br>
+
+        <label for="blood-pressure">Blood Pressure:</label><br>
+        <input type="text" id="blood-pressure" name="blood-pressure" placeholder="120/80">
+        
+        <br><br>
+
+        <label>Symptoms:</label><br>
+        <input type="checkbox" id="fever" name="symptoms" value="fever">
+        <label for="fever">Fever</label><br>
+        <input type="checkbox" id="cough" name="symptoms" value="cough">
+        <label for="cough">Cough</label><br>
+        <input type="checkbox" id="headache" name="symptoms" value="headache">
+        <label for="headache">Headache</label><br>
+        <input type="checkbox" id="body-ache" name="symptoms" value="body-ache">
+        <label for="body-ache">Body Ache</label><br>
+        <input type="checkbox" id="pneumonia" name="symptoms" value="pneumonia">
+        <label for="body-ache">Pneumonia</label><br>
+        <input type="checkbox" id="nausea" name="symptoms" value="nausea">
+        <label for="nausea">Nausea</label>
+        
+        <br><br>
+
+        <label for="medical-history">Medical History:</label><br>
+        <textarea id="medical-history" name="medical-history" rows="4" cols="40"></textarea><br><br>
+
+        <label for="allergies">Allergies:</label><br>
+        <textarea id="allergies" name="allergies" rows="2" cols="40"></textarea><br><br>
+
+        <label for="appointment-date">Appointment Date:</label><br>
+        <input type="date" id="appointment-date" name="appointment-date">
+        
+        <br><br>
+
+        <label for="doctor">Assigned Doctor:</label><br>
+        <select id="doctor" name="doctor">
+            <option value="">Select Doctor</option>
+            <option value="dr-rahman">Dr. Abul</option>
+            <option value="dr-hasan">Dr. Babul</option>
+            <option value="dr-sultana">Dr. Cabul</option>
+            <option value="dr-ahmed">Dr. Kamal</option>
+        </select>
+        
+        <br><br>
+
+        <input type="submit" value="Register Patient">
+        <input type="reset" value="Clear Form">
+    </form>
+
+</body>
+
+</html>
